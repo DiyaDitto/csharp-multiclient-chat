@@ -5,6 +5,7 @@ A real-time, console-based multi-client chat application built using C# and .NET
 The application follows a client-server architecture, where multiple clients connect to a central server and exchange messages in real time.
 
 🚀 Features
+
 Multi-client communication
 Real-time messaging
 Username support
@@ -15,7 +16,9 @@ Thread-safe client management
 Graceful client disconnection
 /exit command
 UTF-8 message support
+
 🛠️ Technologies Used
+
 C#
 .NET
 TCP/IP
