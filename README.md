@@ -38,14 +38,19 @@ The server maintains a list of connected clients. When a client sends a message,
 csharp-multiclient-chat/
 
 ├── ChatServer/
+
    ├── Program.cs
+   
    └── ChatServer.csproj
 
 ├── ChatClient/
+
    ├── Program.cs
+   
    └── ChatClient.csproj
 
 ├── .gitignore
+
 └── README.md
 
 ⚙️ Requirements
@@ -73,7 +78,9 @@ dotnet run
 Expected output:
 
 ================================
+
       CHAT SERVER STARTED
+      
 ================================
 Listening on port 6000...
 Waiting for clients...
@@ -124,7 +131,9 @@ When Rahul exits:
 To leave the chat:
 
 /exit
+
 🧠 Key Concepts
+
 Client-Server Architecture
 
 The server listens for incoming connections while clients connect to the server.
@@ -150,13 +159,18 @@ Message Framing
 TCP is stream-based, so the application uses newline-delimited messages to determine where each message ends.
 
 🔄 Message Flow
+
 Client
+
    │
+   
    │ "Hello"
    ▼
 Chat Server
    │
    │ Broadcast
    ├──────────────► Client 1
+   
    ├──────────────► Client 2
+   
    └──────────────► Client 3
