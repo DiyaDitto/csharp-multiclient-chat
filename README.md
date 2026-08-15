@@ -24,34 +24,27 @@ TcpClient
 NetworkStream
 Multithreading
 Thread synchronization using lock
-🏗️ Architecture
-                    ┌─────────────────┐
-                    │   Chat Server   │
-                    │   TCP : 6000    │
-                    └────────┬────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              │              │              │
-              ▼              ▼              ▼
-         ┌─────────┐    ┌─────────┐    ┌─────────┐
-         │ Client 1│    │ Client 2│    │ Client 3│
-         └─────────┘    └─────────┘    └─────────┘
+
+
+
 
 The server maintains a list of connected clients. When a client sends a message, the server broadcasts it to all connected clients.
 
 📁 Project Structure
+
 csharp-multiclient-chat/
-│
+
 ├── ChatServer/
-│   ├── Program.cs
-│   └── ChatServer.csproj
-│
+   ├── Program.cs
+   └── ChatServer.csproj
+
 ├── ChatClient/
-│   ├── Program.cs
-│   └── ChatClient.csproj
-│
+   ├── Program.cs
+   └── ChatClient.csproj
+
 ├── .gitignore
 └── README.md
+
 ⚙️ Requirements
 
 Before running the application, make sure you have:
